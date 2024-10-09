@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio landitogomez</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#aboutme">Inicio</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Jorge Orlando Romero Gomez</h1>
+            <h2 id="aboutme">About me</h2>
+            <p>Estudiante de ingnieria IPN, persuing a Bachelors degree</p> 
+            <img src="/" alt="Imgaen de perfil George" rel="George">   
+        </section>
+
+        <section>
+            <article>
+                <h2 id="experiencia">Experiencia</h2>
+                <h3>Front End developer en Meta</h3>
+                <p>Me encontraba en un proyecto con otras tres personas, donde teniamos
+                    que automatizar procesos, utilizando Java Script. Minetras estuve en mi estancia ahi
+                    facebook mejoro su optimizacion en un 50%, tuvo un aumento del 40% en usuarios diarios
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 id="proyectos">Proyectos</h2>
+                <h3>Orlando Fitness</h3>
+                <p>Orlando fitness es una app web, para que los usarios puedan contar sus calorias
+                    tanto las consumidas, como las quemadas. Cada vez que el usuario ingresa una nueva accion
+                    la app muestra un gráfica con lo ingresado.
+                </p>
+
+                <h3>GuitarLa</h3>
+                <p>
+                    Guitarla es el resultado de un proyecto solicitado por un cliente...
+                </p>
+
+                <h3>Pagina de tesla</h3>
+                <img
+                    loading="lazy" 
+                    src="/"
+                    alt="Captura de pantalla de web tesla"
+                >
+                <p>
+                    Elon mUsk me llamo para hacerla
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Tecnologias</h2>
+            <u>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </u>
+        </aside>
+
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+
+            <details>
+                <summary>¿Que estudios tienes?</summary>
+                <p>Estudio en la Superior de computo IPN</p>
+            </details>
+
+            <details>
+                <summary>¿Cuales son tus lenguajes favoritos?</summary>
+                <p>JavaScript y C</p>
+            </details>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <div>
+                        <label>Nombre:
+                        <input type="text" id="name" name="name"
+                        placeholder="Ej. Orlando Gomez" required>
+                        </label>
+                    </div>
+                    <!--Si encierro el input en el label, al hacer click en la etiqueta, automaticamente me selecciona el input-->
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="correo"
+                        placeholder="correo@proveedor.com" required>    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+                    <div>
+                        <label>Tel:
+                            <input type="tel" name="telefono"
+                            placeholder="5519781025" required
+                            pattern="[0-9]{9}">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <div>
+                        <label for="why">¿Por que estas interesado?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Mas informacion</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="terms">¿Aceptas los terminos y condiciones?</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+
+                    <div>
+                        <datalist id="languages">
+                            <option value="JavaScript"></option>
+                            <option value="Java"></option>
+                            <option value="Python"></option>
+                            <option value="C#"></option>
+                        </datalist>
+                        <label>
+                            ¿Con que lenguaje quieres que te ayude?
+                            <input list="languages" name="languages">
+                        </label>
+                    </div>
+                </fieldset>
+
+
+                <input type="submit" value="Enviar Contacto">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2024. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
